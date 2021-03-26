@@ -1,0 +1,973 @@
+/*
+Theme Name: Stiftelsens Tema
+Author: Jacob Lundell
+*/
+
+/* .scalingParentWrapper	{
+	transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	-moz-transform: scale(.9);
+	display: block;
+}
+
+.scalingParent	{
+	transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	-moz-transform: scale(.9);
+	display: block;
+	margin: 0 auto;
+} */
+
+.scalingParent	{
+	zoom: .9;
+	/* -moz-transform: scale(.9); */
+	display: block;
+}
+
+#navigation	{
+	max-width: 900px;
+	width: calc(100% - 70px);
+	margin: 0 auto;
+	display: table;
+	margin-top: 50px;
+}
+
+.wordmark	{
+	float: left;
+	font-family: 'Noto Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #000000;
+	border-right: 1px solid #cccccc;
+	padding-right: 40px;
+	margin-right: 5px;
+	width: 107px;
+}
+
+.wordmark:hover	{
+	text-decoration: underline;
+}
+
+.navigationLink	{
+	float: left;
+	margin-left: 35px;
+	font-family: 'Noto Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 32px;
+	cursor: pointer;
+	color: #0055A4;
+}
+
+.navigationLink:hover	{
+	text-decoration: underline;
+}
+
+.navigationIcon	{
+	float: left;
+	height: 50px;
+	margin-bottom: 12px;
+	pointer-events: none;
+}
+
+.pageTitle	{
+	float: left;
+	font-family: 'Noto Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 76px;
+	line-height: 104px;
+	color: #000000;
+	margin-top: 75px;
+	margin-bottom: -20px;
+}
+
+.pageCaption	{
+	max-width: 500px;
+	font-size: 30px !important;
+}
+
+.pageDivider	{
+	float: left;
+	width: 100%;
+	height: 1px;
+	background-color: #cccccc;
+	margin-top: 35px;
+	margin-bottom: 75px;
+}
+
+	/* Slideshow */
+
+	#slideshow	{
+		float: left;
+		width: 100vw;
+		margin-top: 75px;
+		position: relative;
+		overflow-x: hidden;
+		margin-bottom: 100px;
+	}
+	
+	#slideshowContent	{
+		display: flex;
+		flex-direction: row;
+		float: left;
+		margin-left: calc(-100vw + 550px);
+	}
+	
+	#leftImage, #centerImage, #rightImage	{
+		width: calc(100vw - 400px);
+		height: calc((100vw - 400px) * .66);
+		max-height: 698px;
+		max-width: 1050px;
+		float: left;
+		margin-right: 50px;
+		object-fit: cover;
+		object-position: center;
+		background-color: #f0f0f0;
+		pointer-events: none;
+		align-self: flex-start;
+		justify-content: flex-start;
+
+	}
+
+	@media screen and (min-width: 1450px)	{
+		#slideshowContent	{
+			margin-left: calc(-1100px + (50% - 525px));
+		}
+		
+		#slideshowControlsParent	{
+			margin-top: calc(-122px - (1050px / 3)) !important;
+		}
+	}
+
+
+.contentSection	{
+	margin: 0 auto;
+	width: calc(100% - 70px);
+	max-width: 900px;
+}
+
+.largeTitle	{
+	float: left;
+	font-family: 'Noto Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 76px;
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #000000;
+}
+
+.sectionTitle	{
+	font-size: 48px;
+	line-height: 65px;
+	margin-bottom: -10px;
+}
+
+.text, li	{
+	float: left;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #606060;
+	max-width: 850px;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+}
+
+li	{
+	margin: 7px 0 8px 0;
+	width: calc(100% - 23px);
+}
+
+.signature	{
+	float: left;
+	height: 75px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.profileSignature	{
+	margin-top: 10px;
+}
+
+.caption	{
+	float: left;
+	font-family: 'Noto Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #808080;
+	width: 100%;
+}
+
+.captionLarge	{
+	font-size: 32px;
+	line-height: 46px;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	color: #999999;
+}
+
+.textTitle	{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: #999999;
+}
+
+
+.linkSection	{
+	max-width: 950px;
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	display: table;
+}
+
+.linkSectionModule	{
+	float: left;
+	width: calc(50% - 50px);
+	margin: 125px 25px 0 25px;
+}
+
+.linkModuleTitle	{
+	width: 100%; 
+	margin-top: 0; 
+	margin-bottom: 10px;
+	font-size: 48px;
+	line-height: 68px;
+}
+
+.linkIcon	{
+	float: left;
+	height: 110px;
+	margin-bottom: 30px;
+	pointer-events: none;
+}
+
+.captionLink	{
+	color: #0055A4;
+	cursor: pointer;
+	margin-top: 10px;
+	width: auto;
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.captionLink:hover	{
+	text-decoration: underline;
+}
+
+.sectionPadding, .sectionPaddingLarge	{
+	float: left;
+	width: 100%;
+	height: 85px;
+}
+
+.sectionPaddingLarge	{
+	height: 110px;
+}
+
+.margin10	{
+	margin-bottom: 10px;
+}
+
+.margin25	{
+	margin-bottom: 20px !important;
+}
+
+.margin30	{
+	margin-bottom: 30px;
+}
+
+.document	{
+	float: left;
+	max-width: 500px;
+	width: calc(50% - 25px);
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.documentPadding	{
+	margin-right: 50px;
+}
+
+.documentLink	{
+	margin-left: 0;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+#profilePictureFooter	{
+	float: left;
+	height: 215px;
+	margin-top: 110px;
+	pointer-events: none;
+}
+
+#portfolioLinkText	{
+	float: left;
+	font-family: 'inter', sans-serif;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #999999;
+	margin-top: 180px;
+	margin-left: -175px;
+}
+
+
+.wpcf7 input, .wpcf7 textarea	{
+	float: left;
+	width: calc(100% - 30px);
+	border: 1px solid #cccccc;
+	background-color: #f5f5f5;
+	font-family: 'Inter', sans-serif;
+	font-size: 22px;
+	line-height: 34px;
+	color: #000000;
+	padding: 13px 15px;
+	margin-bottom: 35px;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+.wpcf7-not-valid-tip	{
+	margin-top: -20px;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif !important;
+    float: left;
+    padding-bottom: 35px;
+}
+
+.inputPadding	{
+	margin-right: 29px;
+}
+
+.wpcf7 input:focus, .wpcf7 textarea:focus	{
+	outline: none;
+	border: 2px solid #0055A4;
+	padding: 12px 14px;
+}
+
+.wpcf7 textarea	{
+	height: 350px;
+	resize: none;
+	width: calc(100% - 32px);
+}
+
+.wpcf7-submit	{
+	width: auto !important;
+	font-family: 'Noto Serif', serif !important;
+	color: #0055A4 !important;
+	-webkit-font-smoothing: inherit !important;
+	background-color: transparent !important;
+	padding: 0 !important;
+	font-size: 26px !important;
+	border: 0 !important;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.wpcf7-submit:hover	{
+	text-decoration: underline;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 0;
+    float: left;
+    width: calc(100% - 40px);
+    border-radius: 100px;
+    font-family: 'Noto Serif';
+    font-size: 20px;
+    margin-bottom: 35px;
+    border: 0;
+	padding: 0;
+	font-size: 25px;
+	line-height: 38px;
+	color: transparent;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output	{
+	color: #dc3232;
+}
+
+.widgetizedArea	{
+	float: left;
+	width: 100%;
+	margin-top: -20px;
+}
+
+#contactHalfParent	{
+	float: left;
+	width: calc(100% + 30px);
+	margin-left: -15px;
+}
+
+.contactHalf	{
+	float: left;
+	width: calc(50% - 30px);
+	margin: 0 15px;
+}
+
+.captcha	{
+	float: left;
+	zoom: calc(1 / .9);
+	width: 100%;
+}
+
+.g-recaptcha	{
+	margin-bottom: calc(35px * .9);
+}
+
+.status	{
+	font-size: 26px;
+	font-family: 'Noto Serif', serif;
+	float: left;
+	line-height: 32px;
+	color: #ff0f0f;
+	margin-bottom: 35px;
+}
+
+.status span	{
+	color: #008000;
+	position: absolute;
+	left: 0;
+	background-color: #ffffff;
+}
+
+.row	{
+	float: left;
+	width: 100%;
+}
+
+body	{
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6, p	{
+	margin: 0;
+	padding: 0;
+	text-rendering:optimizeLegibility;
+}
+
+a	{
+	text-decoration: none;
+}
+
+
+
+
+/* Nyhetssidan */
+
+.newsTitle	{
+	font-size: 42px;
+	line-height: 57px;
+	margin-bottom: 0;
+	max-width: 850px;
+}
+
+.newsDate	{
+	margin: 17px 0 20px 0;
+	color: #999999;
+	font-size: 26px;
+}
+
+.newsText	{
+	margin-bottom: 85px;
+}
+
+
+/* Ägandesidan */
+
+#kartaParent	{
+	float: left;
+	width: 100%;
+	height: 700px;
+	margin-top: 50px;
+	overflow: hidden;
+	background-color: #AADBFE;
+}
+
+#karta	{
+	margin-top: -54px; 
+	border: 0;
+	width: 100%;
+	height: 754px;
+}
+
+.contentLink	{
+	margin-bottom: 15px;
+	margin-top: 50px;
+}
+
+
+ul	{
+	float: left;
+	width: 100%;
+	padding-inline-start: 23px;
+	margin-block-start: 15px;
+    margin-block-end: 15px;
+}
+
+img	{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+
+/* Slideshow */
+
+#slideshowControlsParent	{
+	margin: 0 auto;
+	margin-top: calc(-122px - ((100vw - 400px) / 3));
+	z-index: 10;
+	position: relative;
+	height: 50px;
+	width: calc(100% - 120px);
+	max-width: 1330px;
+}
+
+.slideshowButton	{
+	float: left;
+	height: 50px;
+	width: 50px;
+	border-radius: 100px;
+	border: 0;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	cursor: pointer;
+}
+
+.slideshowButton:active	{
+	background-color: #eeeeee;
+}
+
+.slideshowButtonRight	{
+	float: right;
+}
+
+.slideshowButtonArrow	{
+	height: 20px;
+	margin: 0 auto;
+	margin-top: 3px;
+}
+
+button	{
+	outline: none;
+}
+
+
+.profilePicture	{
+	width: calc((100% - 100px) / 3);
+	height: auto;
+	background-color: #f0f0f0;
+	border-radius: 1000px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.profilePicturePadding	{
+	margin-right: 50px;
+}
+
+.mobileHidden	{
+	display: block;
+}
+	
+.desktopHidden	{
+	display: none;
+}
+
+.navigationToggleMobile	{
+	display: none;
+}
+
+#mobileNav	{
+	display: none;
+}
+
+.contentParentLarge	{
+	max-width: 1050px;
+	margin: 0 auto;
+	padding-top: 50px;
+	width: calc(100% - 100px);
+}
+
+.footerArchive	{
+	margin-top: -85px;
+}
+
+.footerStiftelsen	{
+	margin-top: -30px;
+}
+
+
+/* @media screen and (max-width: 1400px)	{	
+	.scalingParent	{
+		zoom: 1;
+	}
+} */
+
+@media screen and (max-width: 1370px)	{
+	body	{
+		width: calc(100vw + 1px);
+	}
+}
+
+@media screen and (max-width: calc(1100px / .9))	{
+
+	#rightImage, #leftImage	{
+		display: none;
+	}
+	
+	#centerImage	{
+		width: 100%;
+		margin: 0;
+		max-width: 1400px;
+	}
+	
+	#slideshowContent	{
+		margin: 0 auto;
+		display: table;
+		float: none;
+		width: calc(100% - 100px);
+	}
+	
+	#slideshowControlsParent	{
+		margin-top: calc(-122px - ((100vw - 100px) / 3));
+		width: calc(100% - 170px);
+	}
+
+}
+
+@media screen and (max-width: 970px)	{
+
+	
+	.linkSectionModule	{
+		margin-top: 85px;
+	}
+}
+
+@media screen and (max-width: 910px)	{
+	#slideshow	{
+		margin-bottom: 75px;
+		margin-top: 60px;
+	}
+	
+	#slideshowContent	{
+		margin: 0 auto;
+		display: table;
+		float: none;
+		width: 100%;
+	}
+	
+	#slideshowControlsParent	{
+		padding-left: 0;
+		width: calc(100% - 50px);
+		margin-top: -372px;
+	}
+	
+	#centerImage	{
+		height: 600px;
+	}
+	
+	#kartaParent	{
+		width: calc(100% + 100px);
+		margin-left: -50px;
+	}
+	
+	.tabletHidden	{
+		display: none;
+	}
+	
+	.document	{
+		width: 100%;
+	}
+	
+	.contentParentLarge	{
+		width: calc(100% - 70px);
+	}
+	
+	.contentParentLargeKarta	{
+		width: calc(100% - 100px);
+	}
+	
+	.profilePicture	{
+		width: calc(50% - 25px);
+		margin-bottom: 50px !important;
+		max-width: 300px;
+	}
+	
+	.profilePicturePadding	{
+		margin-right: 0;
+	}
+	
+	.profilePicturePaddingTablet	{
+		margin-right: 50px;
+	}
+	
+	.footerStiftelsen	{
+		margin-top: -50px;
+	}
+	
+	
+}
+
+@media screen and (max-width: 767px)	{
+	.pageTitle, .linkModuleTitle	{
+		font-size: 62px;
+		line-height: 82px;
+	}
+	
+	.pageTitle	{
+		margin-top: 60px;
+	}
+	
+	.contentSection, .contentParentLarge	{
+		width: calc(100% - 50px);
+	}
+	
+	.contentParentLarge	{
+		padding-top: 35px;
+	}
+	
+	.contentParentLargeKarta	{
+		width: calc(100% - 100px);
+	}
+	
+	.linkSectionModule	{
+		width: calc(100% - 50px);
+		margin-top: 75px;
+	}
+	
+	/* .documentLink	{
+		font-size: 30px;
+		line-height: 44px;
+	} */
+	
+	.largeTitle	{
+		font-size: 42px;
+		line-height: 62px;
+	}
+	
+	#desktopNav	{
+		display: none;
+	}
+	
+	.wordmark	{
+		border: 0;
+	}
+	
+	#navigation	{
+		margin-top: 35px;
+		width: calc(100% - 50px);
+	}
+	
+	.mobileHidden	{
+		display: none;
+	}
+	
+	.desktopHidden	{
+		display: block;
+	}
+	
+	.linkSection	{
+		width: 100%;
+	}
+	
+	.linkIcon	{
+		height: 100px;
+	}
+	
+	.pageCaption	{
+		display: none;
+	}
+	
+	#kartaParent	{
+		margin-top: 35px;
+	}
+	
+	.sectionPaddingLarge	{
+		height: 75px;
+	}
+	
+	.document	{
+		width: 100%;
+	}
+	
+	.pageDivider	{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	
+	.newsText	{
+		margin-bottom: 60px;
+	}
+	
+		
+	.newsTitle	{
+		font-size: 36px;
+		line-height: 56px;
+	}
+	
+	.profilePicture	{
+		height: 200px;
+		width: 200px;
+	}
+	
+	.sectionPadding	{
+		height: 60px;
+	}
+	
+	.textTitle	{
+		margin-top: 35px;
+	}
+	
+	#profilePictureFooter	{
+		margin-left: -60px;
+		margin-top: 85px;
+	}
+	
+	#portfolioLinkText	{
+		margin-top: 155px;
+	}
+	
+	
+	.navigationToggleMobile	{
+		display: block;
+		float: right;
+	   
+	    border-radius: 100px;
+	    border: 0;
+	    background-color: #ffffff;
+	    border: 1px solid #cccccc;
+	    box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    cursor: pointer;
+	    font-family: 'Inter', sans-serif;
+	    color: #606060;
+	    font-size: 22px;
+	    line-height: 50px;
+	    height: 56px;
+	    padding: 0 15px;
+	    font-weight: 600;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	}
+	
+	.toggleNavIcon	{
+		height: 20px;
+		margin-left: 4px;
+		padding-top: 17px;
+	}
+	
+	.navigationToggleMobile:active	{
+		background-color: #eeeeee;
+	}
+	
+	#mobileNav	{
+		width: 100%;
+		height: calc(100vh - 35px);
+		background-color: #ffffff;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		padding: 35px 0 0 0;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	.navigationToggleMobileText	{
+		margin-top: 12px;
+		float: left;
+		line-height: 30px;
+		margin-right: 4px;
+	}
+	
+	.mobileNavLink	{
+		width: 50%;
+		margin: 0;
+	}
+	
+	.footerArchive	{
+		margin-top: -60px;
+	}
+	
+	.footerStiftelsen	{
+		margin-top: -30px;
+	}
+	
+	.contentSection input	{
+		width: calc(100% - 32px);
+	}
+	
+	.contactHalf	{
+		width: calc(100% - 32px);
+	}
+	
+	.inputPadding	{
+		margin-right: 0;
+	}
+	
+	.profilePicturePaddingTablet	{
+		margin-right: 25px;
+	}
+	
+	.profilePicture	{
+		width: calc(50% - (25px / 2));
+		height: auto;
+		margin-bottom: 30px !important;
+		max-width: 300px;
+	}
+
+	#slideshow	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	
+	.wpcf7 input {
+	    width: calc(100% - 32px);
+	    margin-bottom: 15px;
+	}
+	
+	.wpcf7 textarea	{
+		margin-top: 20px;
+	}
+
+}
