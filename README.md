@@ -1,1 +1,0 @@
-# stiftelsenfalsterbostrand.se
